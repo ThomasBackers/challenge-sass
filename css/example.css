@@ -91,7 +91,7 @@ h3 {
   padding: 16px;
 }
 
-.success,
+.alert, .success,
 .error,
 .warning {
   border: 1px solid #8C8C8C;
@@ -105,6 +105,10 @@ h3 {
 
 .error {
   background-color: red;
+}
+
+.error:hover {
+  background-color: green;
 }
 
 .warning {
