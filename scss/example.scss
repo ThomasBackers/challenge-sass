@@ -1,4 +1,4 @@
-@import "variables/colors";
+@import "variables/colors", "variables/presets";
 
 body {
     font: 100% "Space Mono", monospace;
@@ -10,7 +10,7 @@ body {
 }
 
 main {
-    padding: 0 1em;
+    padding: $main-padding * 0 $main-padding;
 }
 
 article {
@@ -23,7 +23,7 @@ article {
         -webkit-box-shadow: 10px 10px 15px -4px $main-font-color;
         -moz-box-shadow: 10px 10px 15px -4px $main-font-color;
         box-shadow: 10px 10px 15px -4px $main-font-color;
-        padding: 16px;
+        padding: $main-padding;
         margin: 16px;
         clear: both;
         overflow: auto;
@@ -44,7 +44,7 @@ article {
         margin-bottom: 1.6em;
         max-width: 100%;
         overflow: auto;
-        padding: 1em 1.5em;
+        padding: $main-padding $main-padding * 1.5;
         display: block;
         word-wrap: break-word;
         &.before {
@@ -71,17 +71,17 @@ h1 {
 h3 {
     text-align: center;
     font-size: 1.5em;
-    padding: 32px;
+    padding: $main-padding * 2;
     margin-bottom: 0px;
 }
 
 .messages {
-    padding: 16px;
+    padding: $main-padding;
 }
 
 .alert {
     border: 1px solid $border-color;
-    padding: 16px;
+    padding: $main-padding;
     color: $body-background;
 }
 
