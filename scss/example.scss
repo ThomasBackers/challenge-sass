@@ -27,7 +27,7 @@ article {
         overflow: auto;
         box-sizing: border-box;
     }
-    section#selling-points {
+    &#selling-points {
         flex-grow: 2;
         flex-basis: 100%;
     }
@@ -102,4 +102,15 @@ h3 {
 
 .warning {
     background-color: $alert-color-3;
+}
+
+@for $i from 1 through 3 {
+    .advantages {
+        li {
+            &:nth-child(1n + #{$i}) {
+                background-color: lighten(black, $i * 5%);
+                color: darken(yellow, $i * 5%);
+            }
+        }
+    }
 }

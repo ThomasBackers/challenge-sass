@@ -36,7 +36,7 @@ article section {
           box-sizing: border-box;
 }
 
-article section#selling-points {
+article#selling-points {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -113,4 +113,19 @@ h3 {
 
 .warning {
   background-color: orange;
+}
+
+.advantages li:nth-child(1n + 1) {
+  background-color: #0d0d0d;
+  color: #e6e600;
+}
+
+.advantages li:nth-child(1n + 2) {
+  background-color: #1a1a1a;
+  color: #cccc00;
+}
+
+.advantages li:nth-child(1n + 3) {
+  background-color: #262626;
+  color: #b3b300;
 }
